@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #eee;
+}
+p {
+  margin-bottom: 0.5rem;
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 1rem;
+}
+a {
+  text-decoration: none;
+  color: #ddd;
+}
+a:hover {
+  color: #f1c40f;
+}
+strong {
+  color: #f1c40f;
+  font-weight: 400;
+}
+img {
+  object-fit: cover;
+}
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.title {
+  padding: 3rem 1rem 1rem 1rem;
+  font-weight: 300;
+  /* text-align: center; */
+}
+/*role du client */
+
+.vp {
+  display: flex;
+  flex-flow: column nowrap;
+  background: green url("../images/frame.jpg") center center/cover;
+
+  min-height: 100vh;
+}
+.vp-header {
+  /* flex: 0 0 60px; */
+  background: #333;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  line-height: 1.8rem;
+}
+.vp-h2 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  font-family: "Long Cang", cursive;
+  font-size: 2.5rem;
+  align-items: center;
+}
+.logo {
+  font-size: 1rem;
+  color: #f1c40f;
+
+  padding-left: 0.5rem;
+}
+.vp-h2 a {
+  padding-left: 0.5rem;
+  font-weight: 300;
+}
+.vp-header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.vp-header nav ul li {
+  /* margin: 0 0.3rem; */
+  padding: 1rem;
+}
+.vp > section {
+  flex: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+.vp-section {
+  max-width: 800px;
+  color: white;
+  text-align: center;
+}
+
+.vp-section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+.vp-section p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+.vp-section h1 span {
+  color: #f1c40f;
+}
+.offre {
+  display: flex;
+  flex-flow: column wrap;
+  /* max-width: 70%; */
+  align-content: center;
+  /* border: 1px solid red; */
+  justify-content: center;
+}
+
+.list-offre {
+  display: flex;
+  margin-bottom: 3rem;
+  justify-content: center;
+  max-width: 80%;
+
+  flex: 1;
+  align-items: flex-start;
+}
+.list-offre-elem {
+  margin: 0 2rem;
+  border-radius: 0.5rem;
+  background: white;
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1;
+}
+.list-offre-elem > img {
+  width: 100%;
+}
+.list-offre-elem > div {
+  padding: 0.8rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+.separator-offre {
+  border: 1px solid rgba(44, 62, 80, 1);
+  width: 20%;
+  margin-bottom: 0.5rem;
+  align-self: center;
+}
+/* taille maxi du separator */
+.max {
+  width: 60%;
+  /* align-self: none; */
+  border: 1px solid #ddd;
+}
+.list-offre-elem > div p {
+  text-align: center;
+}
+.who {
+  background: #333;
+  color: white;
+}
+.who-content {
+  max-width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.who-content-img {
+  flex-basis: 45%;
+}
+.who-content-text {
+  flex: 1;
+}
+.who-content-img > img {
+  width: 100%;
+  height: 100%;
+}
+.who-content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+  line-height: 1.5rem;
+}
+.container-temoignage {
+  /* border: 1px solid red; */
+  margin: auto;
+  width: 80%;
+}
+.temoignage {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  /* height: 100vh; */
+}
+
+.temoignage-person {
+  flex-basis: 150px;
+  width: 100%;
+  display: flex;
+  background: white;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 1rem 0rem;
+  border-radius: 0.5rem;
+  align-items: center;
+}
+.temoignage-text {
+  /* border: 1px solid yellow; */
+  flex: 1;
+  padding: 1rem;
+  line-height: 1.5rem;
+  word-spacing: 0.3rem;
+}
+.temoignage-img {
+  /* flex-basis: 25%; */
+  padding: 0.5rem 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  /* margin-bottom: 1rem; */
+}
+.role-count {
+  color: #7f8c8d;
+  font-size: 0.8rem;
+  /*overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 90%;;
+  */
+}
+.temoignage-img > img {
+  width: 3rem;
+  /* height: 40%; */
+  border-radius: 100%;
+}
+.reverse {
+  flex-flow: row-reverse nowrap;
+}
