@@ -7,6 +7,9 @@ html,
 body {
   font-family: "Montserrat", sans-serif;
 }
+label {
+  text-align: left;
+}
 body {
   background: #eee;
 }
@@ -22,6 +25,24 @@ h3,
 h4 {
   margin-bottom: 1rem;
 }
+input,
+textarea {
+  border: none;
+  border-bottom: 1px solid #444;
+  outline: none;
+  background: #333;
+  color: white;
+  width: 50%;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  /* font-weight: bold; */
+  font-size: 1rem;
+}
+::placeholder {
+  color: #ecf0f1;
+}
+
 a {
   text-decoration: none;
   color: #ddd;
@@ -69,6 +90,26 @@ img {
   font-family: "Long Cang", cursive;
   font-size: 2.5rem;
   align-items: center;
+}
+/* bouton generique */
+.btn {
+  padding: 1rem 1.5rem;
+  text-align: center;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  background: white;
+  cursor: pointer;
+  font-weight: 700;
+  color: #333;
+}
+.btn-yellow {
+  background: #f1c40f;
+  color: white;
+}
+.btn:hover {
+  background: red;
 }
 .logo {
   font-size: 1rem;
@@ -207,7 +248,6 @@ img {
 
 .temoignage-person {
   flex-basis: 150px;
-  width: 100%;
   display: flex;
   background: white;
   flex-flow: row nowrap;
@@ -247,4 +287,29 @@ img {
 }
 .reverse {
   flex-flow: row-reverse nowrap;
+}
+/*contact*/
+.contact {
+  background: #333;
+}
+.container-contact {
+  margin: auto;
+  width: 80%;
+  margin-top: 2rem;
+  padding: 2rem 0rem;
+}
+
+.container-contact form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+/* footer */
+footer {
+  background: #222;
+  color: white;
+  padding: 3rem 0rem;
+  text-align: center;
 }

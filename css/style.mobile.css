@@ -1,0 +1,48 @@
+textarea,
+input {
+  width: 90%;
+}
+
+.vp-header {
+  flex-direction: column;
+}
+.vp-section h1 {
+  font-size: 1.5rem;
+  padding: 0rem 0.5rem;
+}
+.vp-section p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.title {
+  text-align: center;
+}
+
+.list-offre {
+  flex-direction: column;
+  max-width: 100%;
+}
+.list-offre-elem {
+  margin: 0;
+  border-radius: 0;
+  margin-bottom: 1rem;
+}
+.who-content {
+  flex-direction: column;
+}
+.who-content-text h2 {
+  padding: 1rem;
+  text-align: center;
+  line-height: 2rem;
+}
+.temoignage-person {
+  flex-basis: auto;
+  flex-direction: column-reverse;
+}
+.temoignage-text {
+  padding: 0.5rem 0.8rem;
+}
+.container-contact {
+  margin: 0;
+  width: 100%;
+}

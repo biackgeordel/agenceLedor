@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
+      media="screen and max-width=500px "
+      href="./css/style.mobile.css"
+    />
+    <link
+      rel="stylesheet"
       media="only screen and (max-width:500px)"
       href="./css/style.mobile.css"
     />
@@ -113,7 +118,7 @@
 
         <section class="container-temoignage">
           <div class="temoignage">
-            <h2 class="title">Ecoutez ce que nous clients pensent de nous</h2>
+            <h2 class="title">Voici ce qu'ils pensent de nous</h2>
             <!-- <div class="separator-offre max"></div> -->
             <div class="temoignage-person reverse">
               <div class="temoignage-text">
@@ -166,8 +171,25 @@
             </div>
           </div>
         </section>
+        <section class="contact">
+          <div class="container-contact">
+            <form action="">
+              <h2 class="title">Pour nous <strong>contacter</strong></h2>
+              <input type="text" placeholder="Nom" />
+              <input type="email" placeholder="Email" />
+              <textarea
+                placeholder="Votre message..."
+                cols="50"
+                rows="1"
+              ></textarea>
+              <button class="btn btn-yellow" type="submit">Soumettre</button>
+            </form>
+          </div>
+        </section>
       </main>
-      <footer></footer>
+      <footer>
+        <p>Copyright &#xA9; 2022</p>
+      </footer>
     </div>
   </body>
 </html>
