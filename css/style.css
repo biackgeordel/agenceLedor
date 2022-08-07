@@ -195,6 +195,7 @@ img {
 .separator-offre {
   border: 1px solid rgba(44, 62, 80, 1);
   width: 20%;
+  max-height: 2px;
   margin-bottom: 0.5rem;
   background: rgba(44, 62, 80, 1);
   align-self: center;
