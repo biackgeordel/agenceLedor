@@ -2,10 +2,26 @@ textarea,
 input {
   width: 90%;
 }
+.vp-h2 {
+  padding: 0.5rem 0;
+}
 
 .vp-header {
   flex-direction: column;
+  padding: 0;
 }
+.vp-header nav {
+  background: #444;
+}
+.vp-header nav ul {
+  flex-direction: column;
+}
+.vp-header nav ul li {
+  text-align: center;
+  border-bottom: 1px solid #222;
+  width: 100%;
+}
+
 .vp-section h1 {
   font-size: 1.5rem;
   padding: 0rem 0.5rem;
@@ -35,9 +51,12 @@ input {
   text-align: center;
   line-height: 2rem;
 }
+.who-content-text {
+  text-align: center;
+}
 .temoignage-person {
   flex-basis: auto;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 .temoignage-text {
   padding: 0.5rem 0.8rem;
@@ -45,4 +64,7 @@ input {
 .container-contact {
   margin: 0;
   width: 100%;
+}
+.reverse {
+  flex-direction: column-reverse;
 }
